@@ -10,7 +10,8 @@
 <body>
     <form action="" class="calculator" name="calc">
         <input class="value" name="txt" type="text" readonly="">
-        <span class="num clear" onclick="document.calc.txt.value ='' " >c</span>
+        <span class="num clear" onclick="document.calc.txt.value ='' " >C</span>
+        <span class="delet num" onclick="document.calc.txt.value = calc.txt.value.slice(0, -1) " >DELET</span>
         <span class="num" onclick="document.calc.txt.value +='/' " >/</span>
         <span class="num" onclick="document.calc.txt.value +='*' " >*</span>
         <span class="num" onclick="document.calc.txt.value +='7' " >7</span>
